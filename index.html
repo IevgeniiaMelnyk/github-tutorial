@@ -17,26 +17,33 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
-      <nav>
-        <a href="">
-          <img src="./images/1556708032_1.jpg" alt="Логотип" width="50" />
-          photo
-        </a>
+    <header class="header">
+      <div class="container-nav">
+        <nav class="sait-nav">
+          <a class="link logo" href="">
+            <img src="./images/1556708032_1.jpg" alt="Логотип" width="50" />
+          </a>
 
-        <ul>
-          <li><a href="">Features</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Community</a></li>
-          <li><a href="">Support</a></li>
-          <li><a href="./wireframes.html">Wireframes</a></li>
-        </ul>
+          <ul class="list sait-list">
+            <li class="nav-item"><a class="link nav-link" href="./index.html">index</a></li>
+            <li class="nav-item">
+              <a class="link nav-link" href="./wireframes.html">wireframes</a>
+            </li>
+            <li class="nav-item">
+              <a class="link nav-link" href="./wirefreme1.html">wireframes1</a>
+            </li>
+            <li class="nav-item"><a class="link nav-link" href="">Support</a></li>
+            <li class="nav-item">
+              <a class="link nav-link" href="./wireframes.html">Wireframes</a>
+            </li>
+          </ul>
 
-        <ul>
-          <li><a href="">Log in</a></li>
-          <li><a href="">Register</a></li>
-        </ul>
-      </nav>
+          <ul class="list sait-in">
+            <li><a class="link" href="">Log in</a></li>
+            <li><a class="link" href="">Register</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -265,6 +272,30 @@
       </ul>
     </div>
 
-    <a href="./wireframes.html">wireframes.html</a>
+    <div class="container">
+      <article class="product">
+        <div class="product-tumb">
+          <img src="./images/1556708032_1.jpg" width="300px" alt="" />
+
+          <div class="product-actions">
+            <a class="link-z" href="">
+              <svg width="30" higtn="30">
+                <use href="./images/sprite.svg#icon-sn-facebook"></use>
+              </svg>
+            </a>
+            <a class="link-z" href="">
+              <svg width="30" higtn="30">
+                <use href="./images/sprite.svg#icon-sn-facebook"></use>
+              </svg>
+            </a>
+            <a class="link-z" href="">
+              <svg width="30" higtn="30">
+                <use href="./images/sprite.svg#icon-sn-facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
   </body>
 </html>

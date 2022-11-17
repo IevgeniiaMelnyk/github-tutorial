@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css"
+    />
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <a href="./index.html">index.html</a>
+    </section>
+    <section class="">
+      <ul class="wireframes1-menu list">
+        <li><a class="wireframes1-link link" href="">Работы</a></li>
+        <li><a class="wireframes1-link link" href="">Портфолио</a></li>
+        <li><a class="wireframes1-link link" href="">Контакты</a></li>
+        <li><a class="wireframes1-link link" href="./wireframe2.html">wirefreme2</a></li>
+      </ul>
+    </section>
+
+    <!-- Модальне вікно -->
+    <button type="button" data-modal-open href>Модальное окно</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button button" data-modal-close>
+          <svg class="modal-x" width="18" height="18">
+            <use href=""></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- формы -->
+    <!-- репета -->
+
+    <section class="container">
+      <form class="form js-speaker-form" autocomplete="on">
+        <div class="form-field">
+          <label class="form-label" for="name">Имя</label>
+          <input class="form-input" type="text" name="name" id="name" autofocus />
+        </div>
+
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+
+        <div class="form-field">
+          <label for="email">Электронная почта</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="group" role="group">
+          <h2 class="group-title">Тема доклада</h2>
+
+          <ul class="topic-options">
+            <li>
+              <input type="checkbox" name="topic" value="html" id="html" />
+              <label for="html">HTML</label>
+            </li>
+            <li>
+              <input type="checkbox" name="topic" value="css" id="css" />
+              <label for="css">CSS</label>
+            </li>
+            <li>
+              <input type="checkbox" name="topic" value="js" id="js" />
+              <label for="js">JavaScript</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group" role="group">
+          <h2 class="group-title">Уровень экспертизы</h2>
+          <ul class="experience-options">
+            <li>
+              <input type="radio" name="experience" value="junior" id="junior" />
+              <label for="junior">Junior</label>
+            </li>
+            <li>
+              <input type="radio" name="experience" value="middle" id="middle" />
+              <label for="middle">Middle</label>
+            </li>
+            <li>
+              <input type="radio" name="experience" value="senior" id="senior" />
+              <label for="senior">Senior</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-field">
+          <label for="date">Дата доклада</label>
+          <input
+            class="date"
+            type="datetime-local"
+            name="date"
+            id="date"
+            min="2020-04-12T10:00"
+            max="2020-04-15T17:00"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="pdf">Загрузите копию доклада в pdf</label>
+          <input type="file" name="pdf" id="pdf" />
+        </div>
+
+        <div class="form-field">
+          <label for="comment">Оставьте коментарий</label>
+          <textarea class="comment" name="comment" id="comment" rows="10"></textarea>
+        </div>
+
+        <div class="form-field">
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy">Соглашаюсь на все, за еду</label>
+        </div>
+
+        <button type="submit">Оставить заявку</button>
+      </form>
+    </section>
+
+    <!-- урок1 -->
+
+    <section class="container">
+      <input
+        class="input-class"
+        type="tel"
+        placeholder="Tel*"
+        name="tel"
+        required
+        minlength="8"
+        pattern="^[1-9]+[0-9]*$"
+        title="xxx-xxx-xx-xx"
+      />
+
+      <label for="">
+        <span>Senior</span>
+        <input type="radio" name="experience" value="senior" id="senior" />
+      </label>
+
+      <textarea class="textarea" name="user-message" placeholder="User message" id=""></textarea>
+
+      <!-- Элемент <fieldset> это контейнер для группировки
+        нескольких связанных элементов в форме, а вложенный
+        <legend> выполянет роль заголовка группы. Связанные
+        радио-кнопки и чекбоксы всегда должны быть 
+        сгруппированы -->
+
+      <fieldset>
+        <legend>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque sed blanditiis
+          voluptatibus!
+        </legend>
+        <input type="radio" name="experience" value="junior" id="junior" />
+        <label for="junior">Junior</label>
+        <input type="radio" name="experience" value="middle" id="middle" />
+        <label for="middle">Middle</label>
+        <input type="radio" name="experience" value="senior" id="senior" />
+        <label for="senior">Senior</label>
+      </fieldset>
+    </section>
+
+    <section class="container-form">
+      <form class="form js-speaker-form" autocomplete="on">
+        <div class="form-field">
+          <input class="form-input" type="text" name="name" id="name" placeholder=" " />
+
+          <label class="form-label" for="name">Имя</label>
+          <span class="icon"></span>
+        </div>
+
+        <div class="form-field">
+          <!-- placeholder=" " пустой не работает! поставь пробел -->
+          <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
+
+          <label class="form-label" for="tel">Телефон</label>
+          <span class="icon"></span>
+        </div>
+        <button type="submit">Оставить заявку</button>
+      </form>
+    </section>
+
+    <section class="container">
+      <div class="stik">
+        <h2 class="h-stik">dffhaljghadfghagha</h2>
+        <p class="text1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque minus harum.
+          Quam aperiam possimus minus laborum? Dolorem harum maiores soluta quisquam quibusdam id
+          mollitia enim saepe nulla magni officiis dolorum veritatis suscipit nihil fugiat labore
+          sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus. Sint, hic. Eligendi
+          quos illo aspernatur ipsum laudantium, illum, praesentium perferendis cumque et officia
+          explicabo numquam dicta. Odit praesentium reprehenderit assumenda adipisci consequatur
+          exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti, facere explicabo
+          deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias. Impedit facilis
+          eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel voluptatibus
+          amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque minus
+          harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta quisquam
+          quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit nihil
+          fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus. Sint,
+          hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis cumque
+          et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda adipisci
+          consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti, facere
+          explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias. Impedit
+          facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          itaque minus harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta
+          quisquam quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit
+          nihil fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus.
+          Sint, hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis
+          cumque et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda
+          adipisci consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti,
+          facere explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias.
+          Impedit facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          itaque minus harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta
+          quisquam quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit
+          nihil fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus.
+          Sint, hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis
+          cumque et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda
+          adipisci consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti,
+          facere explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias.
+          Impedit facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          itaque minus harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta
+          quisquam quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit
+          nihil fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus.
+          Sint, hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis
+          cumque et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda
+          adipisci consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti,
+          facere explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias.
+          Impedit facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet?
+        </p>
+      </div>
+      <div class="stik">
+        <h2 class="h-stik">dffhaljghadfghagha</h2>
+        <p class="text1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque minus harum.
+          Quam aperiam possimus minus laborum? Dolorem harum maiores soluta quisquam quibusdam id
+          mollitia enim saepe nulla magni officiis dolorum veritatis suscipit nihil fugiat labore
+          sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus. Sint, hic. Eligendi
+          quos illo aspernatur ipsum laudantium, illum, praesentium perferendis cumque et officia
+          explicabo numquam dicta. Odit praesentium reprehenderit assumenda adipisci consequatur
+          exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti, facere explicabo
+          deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias. Impedit facilis
+          eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel voluptatibus
+          amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque minus
+          harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta quisquam
+          quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit nihil
+          fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus. Sint,
+          hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis cumque
+          et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda adipisci
+          consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti, facere
+          explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias. Impedit
+          facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          itaque minus harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta
+          quisquam quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit
+          nihil fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus.
+          Sint, hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis
+          cumque et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda
+          adipisci consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti,
+          facere explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias.
+          Impedit facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          itaque minus harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta
+          quisquam quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit
+          nihil fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus.
+          Sint, hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis
+          cumque et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda
+          adipisci consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti,
+          facere explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias.
+          Impedit facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          itaque minus harum. Quam aperiam possimus minus laborum? Dolorem harum maiores soluta
+          quisquam quibusdam id mollitia enim saepe nulla magni officiis dolorum veritatis suscipit
+          nihil fugiat labore sequi repudiandae, quas corrupti aliquid natus eaque necessitatibus.
+          Sint, hic. Eligendi quos illo aspernatur ipsum laudantium, illum, praesentium perferendis
+          cumque et officia explicabo numquam dicta. Odit praesentium reprehenderit assumenda
+          adipisci consequatur exercitationem molestiae nihil, sed deserunt quis nesciunt, corrupti,
+          facere explicabo deleniti veniam! Eius voluptas ullam magni obcaecati iusto molestias.
+          Impedit facilis eveniet perspiciatis. Mollitia illum ab consequuntur. Quam cum beatae vel
+          voluptatibus amet?
+        </p>
+      </div>
+    </section>
+    <div class="test"></div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
